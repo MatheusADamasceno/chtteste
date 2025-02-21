@@ -98,7 +98,8 @@ const handleLogin = (event)=> {
         login.style.display="none"
         chat.style.display = "flex"
 
-        websocket = new WebSocket("ws://localhost:8081")
+         websocket = new WebSocket("wss://chtteste.onrender.com")
+
 
         websocket.onmessage = processMessage
 
